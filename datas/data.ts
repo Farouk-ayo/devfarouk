@@ -130,6 +130,15 @@ export const companiesInfo = [
 
 export const projects = [
   {
+    name: "JustIron",
+    type: "Featured Project",
+    description:
+      "JustIron simplifies laundry services with an intuitive online platform, offering seamless booking, scheduling, and real-time order tracking for users in the UK.",
+    image: "/justiron.png",
+    liveLink: "https://www.justiron.co.uk/",
+    stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
+  },
+  {
     name: "BerryStamp",
     type: "Featured Project",
     description:
