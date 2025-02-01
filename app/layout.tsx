@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     "Farouk Mustapha is a Frontend Engineer specializing in building WebApps with React, Next.js, and TypeScript. Explore my portfolio to see my work, experiences, and skills in creating engaging web experiences.",
   keywords: [
     "Farouk Mustapha",
+    "Farouk",
+    "dev",
+    "Dev Farouk",
+    "devfarouk",
     "Frontend Engineer Portfolio",
     "React Developer",
     "Next.js Developer",
@@ -60,7 +64,7 @@ export const metadata: Metadata = {
     title: "Farouk Mustapha | Frontend Engineer Portfolio",
     description:
       "Explore the portfolio of Farouk Mustapha, a Frontend Engineer skilled in React, Next.js, and TypeScript. Discover engaging web applications and progressive web app projects.",
-    url: "https://devfarouk.vercel.app",
+    url: "https://devfarouk.vercel.app ",
     type: "website",
     images: [
       {
