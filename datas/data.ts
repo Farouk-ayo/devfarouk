@@ -130,11 +130,20 @@ export const companiesInfo = [
 
 export const projects = [
   {
+    name: "PharmaBin",
+    type: "Featured Project",
+    description:
+      "PharmaBin is an initiative dedicated to solving the pressing issue of pharmaceutical waste management in Nigeria. By integrating technology, community engagement, and environmental sustainability, PharmaBin provides a safe, efficient, and eco-friendly solution for the disposal of expired, unused, or contaminated medications. I contributed to this project as part of my colleague's final year endeavor.",
+    image: "/pharmabin.webp",
+    liveLink: "https://www.pharmabin.org/",
+    stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
+  },
+  {
     name: "JustIron",
     type: "Featured Project",
     description:
       "JustIron simplifies laundry services with an intuitive online platform, offering seamless booking, scheduling, and real-time order tracking for users in the UK.",
-    image: "/justiron.png",
+    image: "/justiron.webp",
     liveLink: "https://www.justiron.co.uk/",
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
