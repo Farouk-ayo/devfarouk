@@ -144,7 +144,7 @@ export const projects = [
     description:
       "JustIron simplifies laundry services with an intuitive online platform, offering seamless booking, scheduling, and real-time order tracking for users in the UK.",
     image: "/justiron.webp",
-    liveLink: "https://www.justiron.co.uk/",
+    liveLink: "https://main.d3pwx7piz5hanx.amplifyapp.com/",
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
   {
