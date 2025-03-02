@@ -133,7 +133,7 @@ export const projects = [
     name: "PharmaBin",
     type: "Featured Project",
     description:
-      "PharmaBin is an initiative dedicated to solving the pressing issue of pharmaceutical waste management in Nigeria. By integrating technology, community engagement, and environmental sustainability, PharmaBin provides a safe, efficient, and eco-friendly solution for the disposal of expired, unused, or contaminated medications. I contributed to this project as part of my colleague's final year endeavor.",
+      "PharmaBin tackles pharmaceutical waste management in Nigeria by integrating technology, community engagement, and sustainability. It offers a safe, efficient, and eco-friendly solution for disposing of expired, unused, or contaminated medications.",
     image: "/pharmabin.webp",
     liveLink: "https://www.pharmabin.org/",
     stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
