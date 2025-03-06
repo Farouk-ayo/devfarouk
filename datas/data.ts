@@ -2,23 +2,23 @@ export const socialLinks = [
   {
     name: "Github",
     link: "https://github.com/Farouk-ayo",
-    simpleIcon: "https://cdn.simpleicons.org/github",
+    simpleIcon: "/svgs/github.svg",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/Faroukayo",
-    simpleIcon: "https://cdn.simpleicons.org/linkedin",
+    simpleIcon: "/svgs/linkedIn.svg",
   },
   {
     name: "X",
     link: "https://x.com/Faroukayo24",
-    simpleIcon: "https://cdn.simpleicons.org/x",
+    simpleIcon: "/svgs/x.svg",
   },
 
   {
     name: "Instagram",
     link: "https://www.instagram.com/dev_farouk/",
-    simpleIcon: "https://cdn.simpleicons.org/instagram",
+    simpleIcon: "/svgs/instagram.svg",
   },
 ];
 
