@@ -69,13 +69,13 @@ const Card = ({
           {name}
         </h1>
         <div
-          className={`  px-0 py-0 lg:px-5 lg:py-7 lg:bg-[#FBEDDD] dark:text-primary-color mr-0 ml-0 ${
+          className={`  px-0 py-0 lg:px-5 lg:py-7 lg:bg-[#FBEDDD] dark:text-primary-color text-sm lg:text-base mr-0 ml-0 ${
             isEven ? "lg:-ml-16" : "lg:-mr-16"
           }  mt-2 rounded-md relative`}
         >
           {description}
         </div>
-        <div className=" px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3 font-medium flex-wrap font-idgrotesk">
+        <div className=" px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3  text-sm lg:text-base font-medium flex-wrap font-idgrotesk">
           {stacks.map((stack) => (
             <span>{stack}</span>
           ))}

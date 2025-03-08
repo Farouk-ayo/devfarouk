@@ -18,7 +18,7 @@ export const socialLinks = [
   {
     name: "Instagram",
     link: "https://www.instagram.com/dev_farouk/",
-    simpleIcon: "/svgs/instagram.svg",
+    simpleIcon: "/svgs/insta.svg",
   },
 ];
 
