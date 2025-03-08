@@ -7,6 +7,7 @@ import Copyright from "./sections/Copyright";
 import SplashScreenManager from "./components/SplashScreenManager";
 import { Providers } from "./providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -101,6 +102,7 @@ export default function RootLayout({
           </SplashScreenManager>
         </Providers>
         <GoogleAnalytics gaId="G-FHL88G3PMS" />
+        <Analytics />
       </body>
     </html>
   );
