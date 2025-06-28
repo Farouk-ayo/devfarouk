@@ -15,18 +15,24 @@ const About = () => {
         <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
       </div>
       <div className="flex flex-col  lg:flex-row w-full py-10  gap-10">
-        <div className="w-full lg:w-[50%] flex flex-col gap-2 order-2 lg:order-1">
-          <h4 className="font-bold ">Technologies i work with</h4>
-          <div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
-            <ul className="px-8 py-8 flex flex-row  h-auto sm:flex-col gap-4 sm:h-80 lg:gap-2 lg:h-72  flex-wrap w-full font-idgrotesk">
-              {technologies.map((tech) => (
-                <li className="flex filter grayscale hover:grayscale-0  items-center cursor-pointer gap-5 transition-all duration-300 dark:filter dark:brightness-50 dark:invert hover:dark:brightness-100 hover:dark:invert-0">
+        <div className="w-full lg:w-[50%] flex flex-col gap-4 order-2 lg:order-1">
+          <h4 className="font-bold">Technologies I work with</h4>
+          <div
+            className="bg-no-repeat bg-contain"
+            style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
+          >
+            <ul className="px-6 py-6 flex flex-wrap gap-x-6 gap-y-4 sm:grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 font-idgrotesk">
+              {technologies.map((tech, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-4 cursor-pointer filter grayscale hover:grayscale-0 transition-all duration-300 dark:filter dark:brightness-50 dark:invert hover:dark:brightness-100 hover:dark:invert-0"
+                >
                   <img
                     src={tech.iconLink}
                     alt={tech.name}
-                    height={50}
-                    width={50}
-                    className=""
+                    width={32}
+                    height={32}
+                    className="object-contain"
                   />
                   <span className="hidden sm:inline-block">{tech.name}</span>
                 </li>
@@ -35,20 +41,23 @@ const About = () => {
           </div>
         </div>
         <div className="w-full lg:w-[50%] order-1 lg:order-2">
-          <article>
-            Farouk Mustapha is a Frontend Developer based in Lagos, Nigeria,
-            with over 2 years of experience in the field. I have developed web
-            applications using JavaScript and TypeScript.I love turning designs
-            and ideas into cool web experiences, and work closely with Product
-            designers and backend developers to bring these ideas to life.I have
-            contributed to numerous projects, collaborating with product
-            designers, backend developers, DevOps, and other tech professionals.{" "}
+          <article className="leading-relaxed text-base md:text-lg">
+            I'm Farouk Mustapha, a Frontend Developer based in Lagos, Nigeria,
+            with over 3 years of experience building web and mobile apps. I work
+            mostly with JavaScript, TypeScript, React, React Native, and
+            Next.js, turning ideas and designs into clean, functional user
+            interfaces.
             <br />
             <br />
-            Over this period, I have worked and interned at startups and
-            companies such as Pathpalz, Berrystamp, and JustDoStartUp. I have a
-            strong passion for learning and teaching, and am always updated with
-            the latest advancements in technology.
+            I enjoy collaborating with designers, backend devs, and DevOps to
+            bring products to life. I've worked on projects across startups like
+            Pathpalz, Berrystamp, and JustDoStartUp, and I've learned a lot
+            along the way.
+            <br />
+            <br />
+            Outside of code, I play chess, watch anime, and constantly look for
+            better ways to solve problems. I genuinely enjoy building things —
+            and no matter what happens, I’ll always be an engineer.
           </article>
         </div>
       </div>

@@ -21,39 +21,66 @@ export const socialLinks = [
     simpleIcon: "/svgs/insta.svg",
   },
 ];
-
 export const technologies = [
+  {
+    name: "React",
+    iconLink: "https://cdn.simpleicons.org/react",
+  },
   {
     name: "NextJs",
     iconLink: "https://cdn.simpleicons.org/nextdotjs",
   },
   {
-    name: "React",
-    iconLink: "https://cdn.simpleicons.org/react",
+    name: "Expo React Native",
+    iconLink: "https://cdn.simpleicons.org/expo",
+  },
+  {
+    name: "JavaScript",
+    iconLink: "https://cdn.simpleicons.org/javascript",
+  },
+  {
+    name: "TypeScript",
+    iconLink: "https://cdn.simpleicons.org/typescript",
   },
   {
     name: "TailwindCss",
     iconLink: "https://cdn.simpleicons.org/tailwindcss",
   },
   {
-    name: "Framer Motion",
-    iconLink: "https://cdn.simpleicons.org/framer",
-  },
-  {
     name: "Sass",
     iconLink: "https://cdn.simpleicons.org/sass",
   },
   {
-    name: "Git",
-    iconLink: "https://cdn.simpleicons.org/git",
+    name: "Redux",
+    iconLink: "https://cdn.simpleicons.org/redux",
+  },
+  {
+    name: "Shadcn/ui",
+    iconLink: "https://cdn.simpleicons.org/shadcnui",
   },
   {
     name: "Chakra UI",
     iconLink: "https://cdn.simpleicons.org/chakraui",
   },
   {
-    name: "Shadcn/ui",
-    iconLink: "https://cdn.simpleicons.org/shadcnui",
+    name: "Mui",
+    iconLink: "https://cdn.simpleicons.org/mui",
+  },
+  {
+    name: "Headless UI",
+    iconLink: "https://cdn.simpleicons.org/headlessui",
+  },
+  {
+    name: "Framer Motion",
+    iconLink: "https://cdn.simpleicons.org/framer",
+  },
+  {
+    name: "Git",
+    iconLink: "https://cdn.simpleicons.org/git",
+  },
+  {
+    name: "NodeJs",
+    iconLink: "https://cdn.simpleicons.org/nodedotjs",
   },
 ];
 
@@ -135,6 +162,7 @@ export const projects = [
     description:
       "Mindvolta is a smart mental health assistant that helps users, especially young people and undergraduates, manage conditions like depression, anxiety, and addiction. It includes mood tracking, calming playlists, and chatbot support tailored for emotional wellbeing.",
     image: "/mindvolta.webp",
+    githubLink: "https://github.com/Farouk-ayo/mindvolta",
     stacks: ["React Native", "TypeScript", "TailwindCss"],
   },
   {
@@ -145,6 +173,24 @@ export const projects = [
     image: "/pharmabin.webp",
     liveLink: "https://www.pharmabin.org/",
     stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
+  },
+  {
+    name: "Farote Notes App",
+    type: "Personal Project",
+    description:
+      "Farote is a personal fullstack notes app I built to manage my ideas, quick thoughts, and to-dos. I wanted something I could use anywhere, so I made it a PWA, which means I can install and use it like a native app on my phone. It’s clean, responsive, and supports real-time note creation, editing, and deletion with a smooth, modern UI.",
+    image: "/farote.webp",
+    liveLink: "https://farote.vercel.app",
+    githubLink: "https://github.com/Farouk-ayo/Farote",
+    stacks: [
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Radix UI",
+      "date-fns",
+      "MongoDB",
+      "PWA",
+    ],
   },
   {
     name: "JustIron",
@@ -173,6 +219,17 @@ export const projects = [
     liveLink: "https://www.programs-bfn.ca/",
     stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
   },
+
+  {
+    name: "TMDB v2 Mobile App",
+    type: "Personal Project",
+    description:
+      "A mobile movie discovery app consuming The Movie Database (TMDB) API. Users can explore trending movies, view detailed info, and search across genres with a clean and responsive React Native interface.",
+    image: "/tmdb-v2.webp",
+    stacks: ["React Native", "TypeScript", "TMDB API"],
+    githubLink: "https://github.com/Farouk-ayo/tmdb-v2-mobile-app",
+    liveLink: "https://expo.dev/artifacts/eas/wWgr9LmHE1qD5SnQKHA6QS.aab",
+  },
   {
     name: "GSwift",
     type: "Featured Project",
@@ -182,7 +239,6 @@ export const projects = [
     liveLink: "https://gswift.pathpalz.com/",
     stacks: ["TypeScript", "React", "TailwindCss"],
   },
-
   {
     name: "DeepFocustt",
     type: "Featured Project",
