@@ -130,6 +130,14 @@ export const companiesInfo = [
 
 export const projects = [
   {
+    name: "Mindvolta",
+    type: "Featured Project",
+    description:
+      "Mindvolta is a smart mental health assistant that helps users, especially young people and undergraduates, manage conditions like depression, anxiety, and addiction. It includes mood tracking, calming playlists, and chatbot support tailored for emotional wellbeing.",
+    image: "/mindvolta.webp",
+    stacks: ["React Native", "TypeScript", "TailwindCss"],
+  },
+  {
     name: "PharmaBin",
     type: "Featured Project",
     description:
