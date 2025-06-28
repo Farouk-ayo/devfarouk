@@ -161,7 +161,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "Mindvolta is a smart mental health assistant that helps users, especially young people and undergraduates, manage conditions like depression, anxiety, and addiction. It includes mood tracking, calming playlists, and chatbot support tailored for emotional wellbeing.",
-    image: "/mindvolta.webp",
+    image: "/mindVolta.webp",
     githubLink: "https://github.com/Farouk-ayo/mindvolta",
     stacks: ["React Native", "TypeScript", "TailwindCss"],
   },

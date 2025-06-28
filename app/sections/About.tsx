@@ -56,8 +56,8 @@ const About = () => {
             <br />
             <br />
             Outside of code, I play chess, watch anime, and constantly look for
-            better ways to solve problems. I genuinely enjoy building things —
-            and no matter what happens, I’ll always be an engineer.
+            better ways to solve problems. I genuinely enjoy building things and
+            no matter what happens, I’ll always be an engineer.
           </article>
         </div>
       </div>
