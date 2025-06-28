@@ -220,16 +220,16 @@ export const projects = [
     stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
   },
 
-  {
-    name: "TMDB v2 Mobile App",
-    type: "Personal Project",
-    description:
-      "A mobile movie discovery app consuming The Movie Database (TMDB) API. Users can explore trending movies, view detailed info, and search across genres with a clean and responsive React Native interface.",
-    image: "/tmdb-v2.webp",
-    stacks: ["React Native", "TypeScript", "TMDB API"],
-    githubLink: "https://github.com/Farouk-ayo/tmdb-v2-mobile-app",
-    liveLink: "https://expo.dev/artifacts/eas/wWgr9LmHE1qD5SnQKHA6QS.aab",
-  },
+  // {
+  //   name: "TMDB v2 Mobile App",
+  //   type: "Personal Project",
+  //   description:
+  //     "A mobile movie discovery app consuming The Movie Database (TMDB) API. Users can explore trending movies, view detailed info, and search across genres with a clean and responsive React Native interface.",
+  //   image: "/tmdb-v2.webp",
+  //   stacks: ["React Native", "TypeScript", "TMDB API"],
+  //   githubLink: "https://github.com/Farouk-ayo/tmdb-v2-mobile-app",
+  //   liveLink: "https://expo.dev/artifacts/eas/wWgr9LmHE1qD5SnQKHA6QS.aab",
+  // },
   {
     name: "GSwift",
     type: "Featured Project",
