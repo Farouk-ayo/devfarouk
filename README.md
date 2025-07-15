@@ -1,4 +1,4 @@
-**Farouk Mustapha | Frontend Engineer Portfolio**
+# **Farouk Mustapha | Frontend Engineer Portfolio**
 
 ![Portfolio Preview](https://devfarouk.vercel.app/devfarouk.png)
 
