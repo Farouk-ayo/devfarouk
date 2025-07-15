@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   keywords: [
     "Farouk Mustapha",
     "Farouk",
+    "Faroukayo",
+    "Farouk Ayo",
+    "dev_farouk",
+    "Farouk Mustapha Portfolio",
+    "Farouk Mustapha Frontend Engineer",
     "dev",
     "Dev Farouk",
     "devfarouk",

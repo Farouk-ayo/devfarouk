@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **Farouk Mustapha | Frontend Engineer Portfolio**
 
-## Getting Started
+![Portfolio Preview](https://devfarouk.vercel.app/devfarouk.png)
 
-First, run the development server:
+A **modern, responsive, and SEO-friendly portfolio** built with **Next.js 14, TypeScript, and Tailwind CSS**. It showcases my projects, technical skills, and experience as a **Frontend Engineer** specializing in React and Next.js.
+
+---
+
+## 🚀 **Tech Stack**
+
+**Frontend Framework:** [Next.js 14](https://nextjs.org/)
+**Language:** [TypeScript](https://www.typescriptlang.org/)
+**UI & Styling:** [Tailwind CSS](https://tailwindcss.com/) · [Shadcn/ui](https://ui.shadcn.com/) · [Framer Motion](https://www.framer.com/motion/) · [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/)
+**Icons:** [Lucide React](https://lucide.dev/) · [Radix UI](https://www.radix-ui.com/) · [React Icons](https://react-icons.github.io/react-icons/)
+**Theme Management:** [Next Themes](https://github.com/pacocoursey/next-themes) (Dark/Light mode)
+**Analytics:** [Google Analytics](https://marketingplatform.google.com/about/analytics/) · [Vercel Analytics](https://vercel.com/analytics)
+
+---
+
+## ✨ **Features**
+
+✅ **Fully Responsive** – Mobile-first and optimized for all screen sizes
+✅ **Dark & Light Mode Support** – Seamless theme switching
+✅ **SEO Optimized** – Metadata, Open Graph, and Twitter Card integration
+✅ **Interactive UI** – Smooth animations & hover effects with Framer Motion and AOS
+✅ **Project Showcases** – With live demo & GitHub repository links
+✅ **Splash Screen Manager** – Elegant loading animations
+✅ **Performance Optimized** – Next.js image optimization & lazy loading
+
+---
+
+## 📂 **Project Structure**
+
+```
+devfarouk/
+├── app
+│   ├── components
+│   │   ├── Navbar.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── SplashScreenManager.tsx
+│   │   └── Providers.tsx
+│   ├── sections
+│   │   └── Copyright.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public
+│   └── devfarouk.png
+├── package.json
+└── tailwind.config.js
+```
+
+---
+
+## 🛠 **Getting Started**
+
+### **1. Clone the Repository**
+
+```bash
+git clone https://github.com/Farouk-ayo/devfarouk.git
+cd devfarouk
+```
+
+### **2. Install Dependencies**
+
+```bash
+npm install
+```
+
+### **3. Run the Development Server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **4. Build for Production**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 **Live Demo**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👉 **[devfarouk.vercel.app](https://devfarouk.vercel.app)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📬 **Contact Me**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Portfolio**: [devfarouk.vercel.app](https://devfarouk.vercel.app)
+- **LinkedIn**: [linkedin.com/in/Faroukayo](https://linkedin.com/in/Faroukayo)
+- **Twitter**: [twitter.com/faroukayo24](https://twitter.com/faroukayo24)
+- **Email**: [mustaphafarouk41@gmail.com](mailto:mustaphafarouk41@gmail.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+If you like this project, **please give it a star ⭐ on [GitHub](https://github.com/Farouk-ayo/devfarouk)**.
+
+---
