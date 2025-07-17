@@ -92,6 +92,8 @@ export const sections = [
 ];
 
 export const companies = [
+  "PharmaBin",
+  "ReboundMedia",
   "Pathpalz",
   "Berrystamp",
   "Busineess Prompt",
@@ -101,14 +103,37 @@ export const companies = [
 
 export const companiesInfo = [
   {
+    title: "Web and Mobile App Developer",
+    company: "PharmaBin",
+    location: "Lagos Nigeria",
+    duration: "January 2024 - Present",
+    roles: [
+      "Engineered responsive UI architecture from Figma designs to production-ready Next.js components, ensuring cross-device compatibility and accessibility compliance across 5+ device breakpoints",
+      "Implemented dynamic content management system with full CRUD operations for pharmacy registration, enabling real-time data synchronization and reducing manual processing time.",
+      "Developed interactive mapping solution utilizing geolocation APIs to help users locate pharmaceutical disposal points, serving over 20+ registered pharmacies across Nigeria.",
+      "Represented the product at multiple hackathons, securing recognition for innovative healthcare technology solutions addressing Nigeria's pharmaceutical waste crisis.",
+    ],
+  },
+  {
+    title: "Frontend Engineer",
+    company: "ReboundMedia",
+    location: "Nigeria",
+    duration: "October 2024 - December 2024 (Contract)",
+    roles: [
+      "Engineered sophisticated pricing calculation system handling multi-variable logic for service types (washing, dry cleaning, ironing), item categories (bedsheets, shirts, suits), and quantity modifiers with real-time database synchronization.",
+      "Streamlined user onboarding experience by implementing seamless sign-up to checkout flow, automatically authenticating users post-registration and maintaining session state throughout the order process.",
+      "Optimized performance across booking, scheduling, and tracking modules, delivering enhanced user experience for UK-based laundry service customers.",
+    ],
+  },
+  {
     title: "Lead Frontend Engineer",
     company: "Pathpalz",
     location: "Uk(remote)",
     duration: "February 2023 - September 2024",
     roles: [
-      "Implemented real-time tracking features for users to locate nearby commuters and accurately estimate arrival times, leveraging React tools and Tailwind CSS for enhanced styling",
-      "Developed a ridesharing progressive web application using TypeScript and React, with seamless backend integration of geocoordinate data",
-      "Designed a user-friendly and accessible frontend, prioritizing smooth navigation and efficient API consumption",
+      "Delivered first independent frontend project as sole frontend developer, successfully meeting strict sprint deadlines while maintaining uptime performance",
+      "Designed a user-friendly and accessible frontend interface, prioritizing smooth navigation and efficient API consumption.",
+      "Implemented real-time tracking features for users to locate nearby commuters and accurately estimate arrival times.",
     ],
   },
   {
@@ -117,26 +142,25 @@ export const companiesInfo = [
     location: "Lagos, Nigeria",
     duration: "October 2023 - February 2024",
     roles: [
-      "Contributed significantly to the progress of the startup tech company aiming to decentralize the print-on-demand space(Berrystamp)",
-      "Specialized in API integration for the admin dashboard, collaborating with Backend developers, DevOps, and UI/UX designers",
-      "Proficiently utilized TypeScript and React to enhance the functionality and user experience of the project",
+      "Spearheaded admin dashboard development as key contributor to print-on-demand decentralization initiative, collaborating across Backend, DevOps, and UI/UX teams.",
+      "Specialized in complex API integrations for administrative functionality, ensuring seamless data flow between frontend interface and backend services. ",
+      "Delivered scalable component architecture supporting the startup's rapid growth phase and technical requirements.",
     ],
   },
   {
     title: "Frontend Engineer",
     company: "Business Prompt Pro",
     location: "Remote",
-    duration: " November 2023 - December 2023",
+    duration: " November 2023 - December 2023 (contract)",
     roles: [
-      "Utilized and collaborated closely with a partner proficient in SOFTR.IO and Airtable to create a user-friendly front-end interface for data entry and retrieval and also enabling external users to seamlessly search the Airtable database",
-      "Engineered an intuitive data entry interface within Airtable for fetching the options for each data field and posting data upon form submission",
+      "Engineered intuitive data entry interface integrated with Airtable, enabling external users to seamlessly search and interact with databases containing 10,000+ business prompts.",
     ],
   },
   {
     title: "Frontend Developer",
     company: "DeepFocus",
     location: "Remote",
-    duration: "September 2023",
+    duration: "September 2023 (contract)",
     roles: [
       "Enhanced DeepFocus Wix Website by integrating design elements with code, focusing on the “our team” section and implementing a captivating logo animation with the use of JavaScript",
       "Contributed to the visual appeal and functionality, collaborating closely with the team to elevate the brand’s online presence",
@@ -149,8 +173,7 @@ export const companiesInfo = [
     location: "Lagos Nigeria",
     duration: "February 2023 – July 2023",
     roles: [
-      "Contributed to a community of developers and product designers, in developing a webApp(E-vent). The (E-vent) webApp is designed and developed with React, JavaScript, Vite, and cutting edge React 18 features to provide a centralized platform for event planners, organizers and attendees, to coordinate and manage various aspects of events such as scheduling, ticketing, registration, marketing and communication",
-      ,
+      "Contributed to a community of developers and product designers, in developing a webApp(E-vent). The (E-vent) webApp is designed and developed with React, JavaScript, Vite, and cutting edge React 18 features to provide a centralized platform for event planners, organizers and attendees, to coordinate and manage various aspects of events such as scheduling, ticketing, registration, marketing and communication.",
     ],
   },
 ];

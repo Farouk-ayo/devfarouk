@@ -128,10 +128,12 @@ const Experience = () => {
               </h3>
               {companiesInfo[tab].roles.map((role) => (
                 <div key={role} className="flex justify-start mt-2">
-                  <RiArrowDropRightFill
-                    size={40}
-                    className="text-secondary-color-3"
-                  />
+                  <div>
+                    <RiArrowDropRightFill
+                      size={40}
+                      className="text-secondary-color-3"
+                    />
+                  </div>
                   <p className="text-base">{role}</p>
                 </div>
               ))}
