@@ -51,7 +51,7 @@ const Navbar = () => {
             <li className="hidden lg:inline-block">
               <Button asChild variant={"outline"}>
                 <Link
-                  href="https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
                   className=" border-[1px] border-black"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -103,7 +103,7 @@ const Navbar = () => {
             ))}
             <Button asChild variant={"outline"}>
               <Link
-                href="https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
                 className=""
                 target="_blank"
                 rel="noopener noreferrer"
