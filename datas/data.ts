@@ -195,7 +195,7 @@ export const projects = [
       "PharmaBin tackles pharmaceutical waste management in Nigeria by integrating technology, community engagement, and sustainability. It offers a safe, efficient, and eco-friendly solution for disposing of expired, unused, or contaminated medications.",
     image: "/pharmabin.webp",
     liveLink: "https://www.pharmabin.org/",
-    stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
+    stacks: ["TypeScript", "Nextjs", "TailwindCss", "AOS", "Nodejs"],
   },
   {
     name: "Farote Notes App",

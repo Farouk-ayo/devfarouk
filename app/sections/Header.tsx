@@ -21,14 +21,16 @@ const Header = () => {
             variant={"secondary"}
             className=" font-grotesk text-bases sm:text-xl"
           >
-            A Web & Mobile Frontend Dev!
+            A Software Developer!
           </Badge>
           <p className="mt-2">
             I specialize in building responsive Web and Mobile Apps using
             <span className="font-semibold"> React</span>,{" "}
             <span className="font-semibold">React Native</span>,{" "}
             <span className="font-semibold">Next.js</span>,{" "}
+            <span className="font-semibold">JavaScript</span>,{" "}
             <span className="font-semibold">TypeScript</span>,{" "}
+            <span className="font-semibold">Node.js</span>,{" "}
             <span className="font-semibold">Tailwind CSS</span>, and other
             modern tools — turning designs into delightful user experiences.
           </p>
