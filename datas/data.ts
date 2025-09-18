@@ -46,6 +46,11 @@ export const technologies = [
     name: "TailwindCss",
     iconLink: "https://cdn.simpleicons.org/tailwindcss",
   },
+
+  {
+    name: "Three.js",
+    iconLink: "https://cdn.simpleicons.org/threedotjs",
+  },
   {
     name: "Sass",
     iconLink: "https://cdn.simpleicons.org/sass",
