@@ -3,7 +3,7 @@ import { technologies } from "@/datas/data";
 const About = () => {
   return (
     <section
-      className="flex flex-col pt-28 lg:pt-48 mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%]"
+      className="flex flex-col   mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%]"
       id="about"
       data-aos="fade-up"
     >

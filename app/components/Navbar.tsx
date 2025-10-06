@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <section
-      className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-2 sm:px-16 z-20 backdrop-blur-lg"
+      className="fixed top-0 h-20 lg:h-24 flex flex-row items-center w-full shadow-sm justify-between px-2 sm:px-16 z-20 backdrop-blur-lg"
       data-aos="fade-down"
     >
       <Link
@@ -68,12 +68,12 @@ const Navbar = () => {
         <button
           className={`hamburger ${
             isOpen ? "open" : ""
-          } relative z-30 w-8 h-6 flex flex-col justify-between items-center`}
+          } relative z-30 w-8 h-4 flex flex-col justify-between items-center`}
           onClick={toggleMenu}
         >
-          <span className="line block w-full h-1 dark:bg-secondary-color-3 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
-          <span className="line block w-full h-1 dark:bg-secondary-color-3 bg-black transition-opacity duration-300 ease-in-out"></span>
-          <span className="line block w-full h-1 dark:bg-secondary-color-3 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
+          <span className="line block w-full h-0.5 dark:bg-secondary-color-3 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
+          <span className="line block w-full h-0.5 dark:bg-secondary-color-3 bg-black transition-opacity duration-300 ease-in-out"></span>
+          <span className="line block w-full h-0.5 dark:bg-secondary-color-3 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
         </button>
       </div>
       <motion.div
