@@ -1,0 +1,85 @@
+@import url("https://fonts.cdnfonts.com/css/id-grotesk-trial");
+@import url("https://fonts.cdnfonts.com/css/id-grotesk");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f2f2f2;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbeddd;
+  border-left: 1px solid #fbeddd;
+  border-right: 1px solid #fbeddd;
+  border-radius: 20px;
+}
+
+#companies-scrollbar::-webkit-scrollbar {
+  height: 0;
+  background: transparent;
+}
+
+#companies-scrollbar:hover::-webkit-scrollbar {
+  height: 1px;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+#companies-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #e88e6759;
+  border-left: 1px solid #e88d67;
+  border-right: 1px solid #e88d67;
+  border-radius: 10px;
+}
+
+@tailwind utilities;
+
+:root {
+  --foreground-hex: black;
+  --background-end-hex: #fff;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-hex: rgb(255, 255, 255);
+    --background-end-hex: black;
+  }
+}
+
+* {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-style: normal;
+
+  font-display: swap;
+}
+
+#root {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
