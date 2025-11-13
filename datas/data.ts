@@ -197,6 +197,60 @@ export const companiesInfo = [
 
 export const projects = [
   {
+    name: "PharmaEco",
+    type: "Featured Project",
+    description:
+      "PharmaEco is an AI-powered pharmaceutical waste management platform promoting safe disposal, recycling, and sustainability across Nigeria. It integrates an AI chatbot, community engagement, and regulatory compliance to support a greener future and multiple UN SDGs.",
+    image: "/pharmaeco.webp",
+    liveLink: "https://pharmaeco.org",
+    stacks: [
+      "Next.js",
+      "TypeScript",
+      "Node.Js",
+      "TailwindCss",
+      "PWA",
+      "Vercel",
+    ],
+  },
+  {
+    name: "BFN 2025 Yearbook",
+    type: "Featured Project",
+    description:
+      "Developed the Black Founders Network 2025 Yearbook microsite to celebrate founders, facilitate live voting, and enhance visibility within the BFN community.",
+    image: "/bfn-2025.webp",
+    liveLink: "https://www.programs-bfn.ca/yearbook-2025",
+    stacks: ["TypeScript", "React", "TailwindCss", "AOS", "Firebase"],
+  },
+  {
+    name: "RxQuadri",
+    type: "Featured Project",
+    description:
+      "Portfolio of a UI/UX Designer creating intuitive digital experiences, co-founder of PharmaBin, and advocate for climate action & the SDGs.",
+    image: "/rxquadri.webp",
+    liveLink: "https://rxquadri.vercel.app/",
+    githubLink: "https://github.com/Farouk-ayo/rxquadri",
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+
+  {
+    name: "3D Avatar Fitting App",
+    type: "A Take-Home Assignment Solution",
+    description:
+      "A 3D Avatar Fitting App that enables users to upload and interact with 3D avatar and clothing models (.glb/.gltf). It features auto-fitting logic, real-time color customization, scene state management, visibility toggling, and cloud file storage with a modern dark UI.",
+    image: "/avatar-fit.webp",
+    liveLink: "https://avatar-fit.vercel.app/",
+    githubLink: "https://github.com/Farouk-ayo/avatarFit",
+    loomLink: "https://loom.com/share/15e15cd4f6fb467592477eb4ce8a2f4c",
+    stacks: [
+      "Next.js",
+      "TypeScript",
+      "React Three Fiber",
+      "Material UI",
+      "Vercel Blob",
+    ],
+  },
+
+  {
     name: "Mindvolta",
     type: "Featured Project",
     description:
@@ -250,16 +304,16 @@ export const projects = [
     liveLink: "https://berrystamp.com/",
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
+
   {
-    name: "BFN",
+    name: "BFN 2024 Yearbook",
     type: "Featured Project",
     description:
-      "Developed a microsite for the BFN initiative, collaborating closely with content writers to create a visually appealing and intuitive platform. The site is designed with a focus on user experience, utilizing a clean and modern layout.",
-    image: "/bfn.webp",
-    liveLink: "https://www.programs-bfn.ca/",
+      "Developed the Black Founders Network 2024 Yearbook microsite to showcase founders and promote engagement. Designed for clarity, accessibility, and smooth navigation.",
+    image: "/bfn-2024.webp",
+    liveLink: "https://www.programs-bfn.ca/yearbook-2024",
     stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
   },
-
   // {
   //   name: "TMDB v2 Mobile App",
   //   type: "Personal Project",

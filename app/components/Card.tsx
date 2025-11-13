@@ -1,5 +1,6 @@
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import Link from "next/link";
+import { SiLoom } from "react-icons/si";
 
 interface CardProps {
   id: number;
@@ -7,6 +8,7 @@ interface CardProps {
   type: string;
   description: string;
   image: string;
+  loomLink?: string;
   liveLink?: string;
   githubLink?: string;
   stacks: Array<string>;
@@ -18,6 +20,7 @@ const Card = ({
   type,
   description,
   image,
+  loomLink,
   liveLink,
   githubLink,
   stacks,
@@ -45,14 +48,14 @@ const Card = ({
             <img
               src={image}
               alt={`${name} Image`}
-              className="object-cover w-full h-48 sm:h-56 md:h-64 lg:h-[370px] lg:grayscale lg:group-hover:grayscale-0 transition-all lg:object-left rounded-t-lg lg:rounded-lg shadow-lg"
+              className="object-cover w-full h-48 sm:h-56 md:h-64 lg:h-[370px] lg:grayscale-[50%] lg:group-hover:grayscale-0 transition-all lg:object-left rounded-t-lg lg:rounded-lg shadow-lg"
             />
           </Link>
         ) : (
           <img
             src={image}
             alt={`${name} Image`}
-            className="object-cover w-full h-48 sm:h-56 md:h-64 lg:h-[370px] lg:grayscale lg:group-hover:grayscale-0 transition-all lg:object-left rounded-t-lg lg:rounded-lg shadow-lg"
+            className="object-cover w-full h-48 sm:h-56 md:h-64 lg:h-[370px] lg:grayscale-[50%] lg:group-hover:grayscale-0 transition-all lg:object-left rounded-t-lg lg:rounded-lg shadow-lg"
           />
         )}
       </div>
@@ -82,6 +85,21 @@ const Card = ({
             isEven ? "lg:justify-end" : "lg:justify-start"
           }`}
         >
+          {loomLink && (
+            <Link
+              href={loomLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+              title="Watch Loom Walkthrough"
+            >
+              <SiLoom
+                size={20}
+                className="text-primary-color dark:lg:text-secondary-color-3"
+              />
+            </Link>
+          )}
+
           {liveLink && (
             <Link
               href={liveLink}
