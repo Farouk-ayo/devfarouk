@@ -30,6 +30,7 @@ const Header = () => {
             <span className="font-semibold">Next.js</span>,{" "}
             <span className="font-semibold">JavaScript</span>,{" "}
             <span className="font-semibold">TypeScript</span>,{" "}
+            <span className="font-semibold">WebGL</span>,{" "}
             <span className="font-semibold">Node.js</span>,{" "}
             <span className="font-semibold">Tailwind CSS</span>, and other
             modern tools — turning designs into delightful user experiences.
@@ -53,7 +54,7 @@ const Header = () => {
         </Button>
       </section>
       <section
-        className=" w-full justify-center md:justify-center relative flex lg:justify-end items-center xl:w-[30%] h-[25rem] bg-center lg:bg-right bg-contain bg-no-repeat lg:w-[30%]"
+        className=" w-full justify-center md:justify-center relative flex lg:justify-end items-center xl:w-[30%] h-[25rem] bg-center lg:bg-right bg-contain bg-no-repeat lg:w-[30%] group"
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
         data-aos="zoom-in"
       >
@@ -61,6 +62,7 @@ const Header = () => {
           <Image
             alt="profile image"
             src={"/profile.webp"}
+            className=" grayscale-[70%]  transition-all "
             style={{
               borderRadius: "50%",
               height: "100%",
