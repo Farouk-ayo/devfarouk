@@ -98,12 +98,10 @@ export const sections = [
 
 export const companies = [
   "ThreadSwift",
-  "PharmaBin",
+  "PharmaEco",
   "ReboundMedia",
   "Pathpalz",
   "Berrystamp",
-  "Busineess Prompt",
-  "Deep Focus",
   "JustDo Startup",
 ];
 
@@ -115,25 +113,24 @@ export const companiesInfo = [
     duration: "August 2025 – Present",
     roles: [
       "Engineered a full-stack marketplace system enabling users to browse, favorite, and purchase 3D fashion assets, implementing seamless product CRUD operations and subscription-based payment architecture.",
-      "Built an advanced studio for users, implementing auto-fitting, rigging, and animation systems that optimized 3D clothing adaptation to avatars using Three.js under the guidance of a senior developer.",
+      "Built an advanced studio for users, implementing auto-fitting, rigging, and animation systems that optimized 3D clothing adaptation to avatars using Three.js.",
       "Collaborated with designers and 3D artists to translate creative concepts into interactive real-time previews using Three.js and React Three Fiber, optimizing render performance for complex models.",
     ],
   },
   {
     title: "Web and Mobile App Developer",
-    company: "PharmaBin",
+    company: "PharmaEco -AI-Powered Pharmaceutical Waste Management  ",
     location: "Lagos Nigeria",
-    duration: "January 2024 - Present",
+    duration: "January 2025 - Present",
     roles: [
-      "Engineered responsive UI architecture from Figma designs to production-ready Next.js components, ensuring cross-device compatibility and accessibility compliance across 5+ device breakpoints",
-      "Implemented dynamic content management system with full CRUD operations for pharmacy registration, enabling real-time data synchronization and reducing manual processing time.",
-      "Developed interactive mapping solution utilizing geolocation APIs to help users locate pharmaceutical disposal points, serving over 20+ registered pharmacies across Nigeria.",
-      "Represented the product at multiple hackathons, securing recognition for innovative healthcare technology solutions addressing Nigeria's pharmaceutical waste crisis.",
+      "Built and represented PharmaEcoGuard EMR at AHEAD Africa Healthtech Conference Innovation Hackathon 2025, winning People's Choice Award for a smart pharmacy care and pharmacovigilance platform integrating patient documentation, ADR identification via Dorra EMR API, and pharmaceutical waste tracking",
+      "Developed full-stack AI-driven PWA with multi-page architecture addressing pharmaceutical waste management across Nigeria, implementing chatbot functionality, educational content system, geolocation-based disposal mapping, and community engagement features supporting multiple UN Sustainable Development Goals",
+      "Built a comprehensive waste tracking and pharmacy registration system with full CRUD operations, enabling facilities to record returned medicines, monitor packaging disposal, earn sustainability points, and achieve sub-200ms API response times across 20+ registered pharmacies",
     ],
   },
   {
     title: "Frontend Engineer",
-    company: "ReboundMedia",
+    company: "ReboundMedia - JustIron Laundry",
     location: "Nigeria",
     duration: "October 2024 - December 2024 (Contract)",
     roles: [
@@ -144,46 +141,25 @@ export const companiesInfo = [
   },
   {
     title: "Lead Frontend Engineer",
-    company: "Pathpalz",
+    company: "Pathpalz - GSwift Ridesharing PWA",
     location: "Uk(remote)",
     duration: "February 2023 - September 2024",
     roles: [
-      "Delivered first independent frontend project as sole frontend developer, successfully meeting strict sprint deadlines while maintaining uptime performance",
-      "Designed a user-friendly and accessible frontend interface, prioritizing smooth navigation and efficient API consumption.",
-      "Implemented real-time tracking features for users to locate nearby commuters and accurately estimate arrival times.",
+      "Developed a PWA for ride-sharing, enabling users to find nearby commuters and share rides in real time.",
+      "Built responsive interfaces optimized for smooth navigation and consumption of geolocation and commuter-tracking API",
     ],
   },
   {
     title: "Frontend Engineer",
-    company: "Berrystamp",
+    company: "Berrystamp - Decentralized Print-on-Demand",
     location: "Lagos, Nigeria",
     duration: "October 2023 - February 2024",
     roles: [
-      "Spearheaded admin dashboard development as key contributor to print-on-demand decentralization initiative, collaborating across Backend, DevOps, and UI/UX teams.",
-      "Specialized in complex API integrations for administrative functionality, ensuring seamless data flow between frontend interface and backend services. ",
-      "Delivered scalable component architecture supporting the startup's rapid growth phase and technical requirements.",
+      "Led admin dashboard development for a decentralized print-on-demand platform.",
+      "Implemented complex API integrations and scalable component architecture during early startup growth.",
     ],
   },
-  {
-    title: "Frontend Engineer",
-    company: "Business Prompt Pro",
-    location: "Remote",
-    duration: " November 2023 - December 2023 (contract)",
-    roles: [
-      "Engineered intuitive data entry interface integrated with Airtable, enabling external users to seamlessly search and interact with databases containing 10,000+ business prompts.",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company: "DeepFocus",
-    location: "Remote",
-    duration: "September 2023 (contract)",
-    roles: [
-      "Enhanced DeepFocus Wix Website by integrating design elements with code, focusing on the “our team” section and implementing a captivating logo animation with the use of JavaScript",
-      "Contributed to the visual appeal and functionality, collaborating closely with the team to elevate the brand’s online presence",
-      ,
-    ],
-  },
+
   {
     title: "Frontend Developer",
     company: "JustDo-Startup (JDS)",
