@@ -87,7 +87,7 @@ const Experience = () => {
         <div
           id="companies-scrollbar"
           ref={containerRef}
-          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[30%] lg:border-l-[#f2f2f2] lg:border-l-2"
+          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] "
           // style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
         >
           {companies.map((company, id) => (
@@ -95,7 +95,7 @@ const Experience = () => {
               key={id}
               className={`lg:w-full cursor-pointer hover:text-primary-color hover:bg-[#FBEDDD] transition-all px-5 py-2  ${
                 tab === id &&
-                " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-primary-color"
+                " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-primary-color font-medium"
               }`}
               onClick={() => handleTabClick(id)}
             >

@@ -27,10 +27,10 @@ const Header = () => {
             I specialize in building responsive Web and Mobile Apps using React,
             React Native, Next.js,{" "}
             <span className="text-[#E88D67] font-medium">
-              JavaScript, Python
+              TypeScript, Python
             </span>
-            , TypeScript, WebGL, Node.js, Tailwind CSS, and other modern tools —
-            turning designs into delightful user experiences.
+            , WebGL, Node.js, Tailwind CSS, and other modern tools — turning
+            designs into delightful user experiences.
           </p>
         </div>
         <Button asChild variant={"outline"}>
