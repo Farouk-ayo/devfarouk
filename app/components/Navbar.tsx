@@ -33,9 +33,9 @@ const Navbar = () => {
           uk
         </p>
       </Link>
-      <div className="hidden md:flex items-center gap-2  font-grotesk uppercase">
+      <div className="hidden md:flex items-center gap-2  leading-relaxed text-base md:text-lg ">
         <nav className="w-full flex flex-row items-center">
-          <ul className="w-full flex flex-row justify-start items-center font-semibold text-lg gap-4">
+          <ul className="w-full flex flex-row justify-start items-center text-xl gap-4">
             {sections.map((section, id) => (
               <Button
                 variant={"link"}
@@ -43,10 +43,10 @@ const Navbar = () => {
                 className="hidden lg:inline-block"
                 asChild
               >
-                <Link key={id} href={section.idRoute} className="">
-                  {section.name}
-                </Link>
-              </Button>
+              <Link key={id} href={section.idRoute} className="">
+                {section.name}
+              </Link>
+               </Button>
             ))}
             <li className="hidden lg:inline-block">
               <Button asChild variant={"outline"}>

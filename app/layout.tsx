@@ -8,10 +8,28 @@ import SplashScreenManager from "./components/SplashScreenManager";
 import { Providers } from "./providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
+import { Archivo, Rubik, Sora } from "next/font/google";
+import TopoWaves from "./components/TopoWaves";
 
-export const inter = Inter({
+export const rubik = Rubik({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
+  variable: "--font-rubik",
+});
+
+export const sora = Sora({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-sora",
+});
+
+export const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-archivo",
 });
 
 export const metadata: Metadata = {
@@ -98,8 +116,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} `}>
+      <body
+        className={`${rubik.variable} ${sora.variable} ${archivo.variable} font-sans antialiased `}
+      >
         <Providers>
+          <TopoWaves />
           <SplashScreenManager>
             <Navbar />
             <Sidebar />

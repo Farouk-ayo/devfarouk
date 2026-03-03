@@ -5,6 +5,18 @@
 @tailwind base;
 @tailwind components;
 
+@theme {
+  --font-rubik:
+    var(--font-rubik), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sora:
+    var(--font-sora), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-archivo:
+    var(--font-archivo), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background: #f2f2f2;
@@ -13,8 +25,8 @@
 
 ::-webkit-scrollbar-thumb {
   background: #fbeddd;
-  border-left: 1px solid #fbeddd;
-  border-right: 1px solid #fbeddd;
+  border-left: 1px solid #e88d67;
+  border-right: 1px solid #e88d67;
   border-radius: 20px;
 }
 
@@ -52,10 +64,12 @@
 }
 
 * {
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  /* letter-spacing: 1px; */
+  /* word-spacing: 2px; */
   font-style: normal;
-
+  font-family:
+    var(--font-rubik), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-display: swap;
 }
 

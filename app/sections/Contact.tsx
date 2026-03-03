@@ -11,10 +11,10 @@ const Contact = () => {
       data-aos="fade-up"
     >
       <div className="flex flex-col gap-2 justify-center items-center w-full sm:w-[85%] m-auto">
-        <h2 className=" text-lg sm:text-3xl text-secondary-color-3 font-semibold font-idgrotesk">
+        <h2 className=" text-lg sm:text-3xl text-secondary-color-3 font-medium font-idgrotesk">
           What next? Let's talk!
         </h2>
-        <h3 className=" text-2xl sm:text-4xl font-bold">Get in Touch</h3>
+        <h3 className=" text-2xl sm:text-4xl font-medium">Get in Touch</h3>
         <p className="text-base sm:text-lg">
           I'm currently open to new job opportunities. Contact me if you are
           interested in having me on your team, working on your project, seeking
@@ -33,7 +33,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={"mailto:your.mustaphafarouk41@gmail.com"}
-            className=" text-base flex items-center justify-center gap-3 px-5 py-2  font-bold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
+            className=" text-base flex items-center justify-center gap-3 px-5 py-2  font-medium w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
           >
             Send A Message
             <Image

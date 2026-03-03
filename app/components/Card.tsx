@@ -28,13 +28,13 @@ const Card = ({
   const isEven = id % 2 === 0;
   return (
     <section
-      className={`flex flex-col lg:flex-row w-full md:px-12 items-center px-4 sm:px-6 group`}
+      className={`flex flex-col lg:flex-row w-full md:px-12 items-center px-4 sm:px-6 group `}
       data-aos={`fade-up`}
       data-aos-easing="ease-out-cubic"
       data-aos-duration="2000"
     >
       <div
-        className={`w-full sm:w-[90%] lg:w-[60%] ${
+        className={`w-full sm:w-[90%] lg:w-[60%] shadow ${
           isEven ? "lg:order-1" : "lg:order-2"
         }`}
       >
@@ -60,16 +60,16 @@ const Card = ({
         )}
       </div>
       <div
-        className={`relative z-10 p-4 lg:p-0 w-full sm:w-[90%] lg:w-[40%] lg:bg-transparent lg:rounded-none rounded-b-lg bg-[#FBEDDD] lg:bg-none ${
+        className={`relative z-10 p-4 lg:p-0 w-full sm:w-[90%] lg:w-[40%] lg:bg-transparent lg:rounded-none rounded-b-lg bg-[#FBEDDD] shadow lg:shadow-none lg:bg-none ${
           isEven ? "lg:order-2 lg:text-right" : "lg:order-1 lg:text-left"
         }`}
       >
         <h6 className="text-sm text-secondary-color-3  font-grotesk">{type}</h6>
-        <h1 className="text-2xl  font-bold dark:lg:text-white dark:text-primary-color">
+        <h1 className="text-2xl  font-medium dark:lg:text-white dark:text-primary-color">
           {name}
         </h1>
         <div
-          className={`px-0 py-0 lg:px-5 lg:py-7 lg:bg-[#FBEDDD] dark:text-primary-color text-sm lg:text-base mr-0 ml-0 ${
+          className={`px-0 py-0 lg:px-5 lg:py-7 lg:bg-[#FBEDDD] lg:shadow dark:text-primary-color text-sm lg:text-base mr-0 ml-0 ${
             isEven ? "lg:-ml-16" : "lg:-mr-16"
           } mt-2 rounded-md relative`}
         >
@@ -81,7 +81,7 @@ const Card = ({
           ))}
         </div>
         <div
-          className={`flex gap-4 items-center justify-start mt-3 ${
+          className={`flex gap-1 items-center justify-start mt-3 ${
             isEven ? "lg:justify-end" : "lg:justify-start"
           }`}
         >
@@ -94,7 +94,7 @@ const Card = ({
               title="Watch Loom Walkthrough"
             >
               <SiLoom
-                size={20}
+                size={16}
                 className="text-primary-color dark:lg:text-secondary-color-3"
               />
             </Link>
@@ -108,7 +108,7 @@ const Card = ({
               className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
             >
               <FaArrowUpRightFromSquare
-                size={20}
+                size={16}
                 className="text-primary-color dark:lg:text-secondary-color-3"
               />
             </Link>
@@ -121,7 +121,7 @@ const Card = ({
               className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
             >
               <FaGithub
-                size={20}
+                size={16}
                 className="text-primary-color dark:lg:text-secondary-color-3"
               />
             </Link>

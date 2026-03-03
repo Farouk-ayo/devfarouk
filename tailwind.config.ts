@@ -16,7 +16,7 @@ const config: Config = {
       },
       colors: {
         "primary-color": "#4d1f00",
-        "border-color": "#FBEDDD",
+        "border-color": "#E88D67",
         "secondary-color": "#ffe1cc",
         "secondary-color-2": "#F2CA99",
         "secondary-color-3": "#E88D67",

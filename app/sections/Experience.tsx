@@ -77,8 +77,8 @@ const Experience = () => {
       id="experience"
       data-aos="fade-up"
     >
-      <header className="flex flex-row gap-4 justify-start items-center font-bold">
-        <span className="font-bold text-lg sm:text-2xl font-idgrotesk">
+      <header className="flex flex-row gap-4 justify-start items-center ">
+        <span className="font-medium text-lg sm:text-2xl font-idgrotesk">
           02. Where I've worked
         </span>
         <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
@@ -88,12 +88,12 @@ const Experience = () => {
           id="companies-scrollbar"
           ref={containerRef}
           className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[30%] lg:border-l-[#f2f2f2] lg:border-l-2"
-          style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
+          // style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
         >
           {companies.map((company, id) => (
             <div
               key={id}
-              className={`lg:w-full cursor-pointer hover:text-primary-color hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
+              className={`lg:w-full cursor-pointer hover:text-primary-color hover:bg-[#FBEDDD] transition-all px-5 py-2  ${
                 tab === id &&
                 " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-primary-color"
               }`}
@@ -103,7 +103,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        <div className="w-[100%] lg:w-[60%] lg:h-64">
+        <div className="w-[100%] lg:w-[60%] ">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
               key={tab}
@@ -114,7 +114,7 @@ const Experience = () => {
               custom={direction}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-lg font-bold font-grotesk">
+              <h3 className="text-lg font-medium font-grotesk">
                 {companiesInfo[tab].title} @
                 <span className="text-secondary-color-3">
                   {companiesInfo[tab].company}

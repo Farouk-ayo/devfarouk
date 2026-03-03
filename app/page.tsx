@@ -2,7 +2,7 @@
 
 import Header from "./sections/Header";
 import About from "./sections/About";
-import Works from "./sections/Works";
+import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
 import { useEffect } from "react";
@@ -24,7 +24,7 @@ export default function Home() {
       <Header />
       <About />
       <Experience />
-      <Works />
+      <Projects />
       <Contact />
     </main>
   );

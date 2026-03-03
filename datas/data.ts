@@ -39,6 +39,10 @@ export const technologies = [
     iconLink: "https://cdn.simpleicons.org/javascript",
   },
   {
+    name: "Python",
+    iconLink: "https://cdn.simpleicons.org/python",
+  },
+  {
     name: "TypeScript",
     iconLink: "https://cdn.simpleicons.org/typescript",
   },
@@ -92,7 +96,7 @@ export const technologies = [
 export const sections = [
   { idRoute: "/#about", name: "About" },
   { idRoute: "/#experience", name: "Experience" },
-  { idRoute: "/#works", name: "Works" },
+  { idRoute: "/#projects", name: "Projects" },
   { idRoute: "/#contact", name: "Contact" },
 ];
 
@@ -210,7 +214,7 @@ export const projects = [
 
   {
     name: "3D Avatar Fitting App",
-    type: "A Take-Home Assignment Solution",
+    type: "A Task Solution",
     description:
       "A 3D Avatar Fitting App that enables users to upload and interact with 3D avatar and clothing models (.glb/.gltf). It features auto-fitting logic, real-time color customization, scene state management, visibility toggling, and cloud file storage with a modern dark UI.",
     image: "/avatar-fit.webp",
