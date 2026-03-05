@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import Link from "next/link";
 
-export default function Project() {
+export default function Projects() {
   return (
     <div className="flex flex-col xl:mx-[10%] lg:mx-[7%] mx-0 md:mx-[7%] my-24 mt-24  py-8 gap-16">
       <div className=" flex items-center gap-2 sm:gap-8">
