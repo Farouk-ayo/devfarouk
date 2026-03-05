@@ -87,7 +87,7 @@ const Experience = () => {
         <div
           id="companies-scrollbar"
           ref={containerRef}
-          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] "
+          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[40%]  "
           // style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
         >
           {companies.map((company, id) => (
