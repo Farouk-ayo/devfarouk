@@ -1,8 +1,6 @@
 // components/SplashScreen.js
 import { motion } from "framer-motion";
 
-// import Lottie from "react-lottie";
-// import animationData from "../../datas/lottie.json";
 
 const SplashScreen = ({ finishLoading }: { finishLoading: () => void }) => {
   return (
@@ -25,30 +23,6 @@ const SplashScreen = ({ finishLoading }: { finishLoading: () => void }) => {
     </section>
   );
 
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
-
-  // return (
-  //   <section className="flex w-full h-screen justify-center items-center">
-  //     <Lottie
-  //       options={defaultOptions}
-  //       height={400}
-  //       width={400}
-  //       eventListeners={[
-  //         {
-  //           eventName: "complete",
-  //           callback: finishLoading,
-  //         },
-  //       ]}
-  //     />
-  //   </section>
-  // );
 };
 
 export default SplashScreen;
