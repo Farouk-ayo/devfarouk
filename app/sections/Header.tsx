@@ -57,7 +57,7 @@ const Header = () => {
         <div className="relative h-[18rem] w-[18rem] lg:h-[17rem] lg:w-[17rem]">
           <Image
             alt="profile image"
-            src={"/profile.webp"}
+            src={"/pprofile.webp"}
             quality={100}
             className="grayscale-[30%] contrast-[1.15] saturate-[1.1] transition-all"
             style={{

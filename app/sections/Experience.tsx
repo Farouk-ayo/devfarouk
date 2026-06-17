@@ -107,7 +107,7 @@ const Experience = () => {
           ))}
         </div>
         <div className="w-[100%] lg:w-[60%] overflow-x-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-          <AnimatePresence mode="wait" custom={direction}>
+          <AnimatePresence mode="wait" initial={false} custom={direction}>
             <motion.div
               key={tab}
               initial="hidden"
