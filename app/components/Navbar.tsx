@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { sections } from "@/datas/data";
 import Link from "next/link";
-import { HiDocumentText } from "react-icons/hi";
+import { HiOutlineDocumentText } from "react-icons/hi";
 import { Button } from "@/components/ui/button";
 import { ThemeSwitcher } from "./ThemeSwitch";
 
@@ -22,44 +22,42 @@ const Navbar = () => {
     >
       <Link
         href="/"
-        className="flex justify-start sm:justify-center items-center  uppercase tracking-wider"
+        className="flex justify-start sm:justify-center items-center uppercase tracking-wider"
       >
-        <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3 font-idgrotesk">
+        <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-gray-900 dark:text-white font-display">
           Dev
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold font-grotesk">
+        <p className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3">
           Far
           <ThemeSwitcher />
           uk
         </p>
       </Link>
-      <div className="hidden md:flex items-center gap-2  leading-relaxed text-base md:text-lg ">
+      <div className="hidden md:flex items-center gap-2">
         <nav className="w-full flex flex-row items-center">
-          <ul className="w-full flex flex-row justify-start items-center text-xl gap-4">
+          <ul className="w-full flex flex-row justify-start items-center gap-6">
             {sections.map((section, id) => (
               <Button
                 variant={"link"}
                 key={id}
-                className="hidden lg:inline-block"
+                className="hidden lg:inline-flex p-0 h-auto text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white no-underline hover:no-underline"
                 asChild
               >
-              <Link key={id} href={section.idRoute} className="">
-                {section.name}
-              </Link>
-               </Button>
-            ))}
-            <li className="hidden lg:inline-block">
-              <Button asChild variant={"outline"}>
-                <Link
-                  href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
-                  className=" border-[1px] border-black"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Resume
-                  <HiDocumentText size={25} className="ml-2" />
+                <Link key={id} href={section.idRoute}>
+                  {section.name}
                 </Link>
               </Button>
+            ))}
+            <li className="hidden lg:inline-block">
+              <Link
+                href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3 hover:text-white rounded-sm transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Resume
+                <HiOutlineDocumentText size={16} />
+              </Link>
             </li>
           </ul>
         </nav>
@@ -86,33 +84,29 @@ const Navbar = () => {
           initial={{ x: "100%" }}
           animate={{ x: isOpen ? "0%" : "100%" }}
           transition={{ duration: 0.5 }}
-          className="absolute top-0 right-0 h-full w-3/4 bg-white shadow-lg p-4"
+          className="absolute top-0 right-0 h-full w-3/4 bg-white dark:bg-gray-950 shadow-lg p-4 border-l border-gray-100 dark:border-gray-800"
         >
-          <nav className="w-full flex flex-col items-center  z-40 mt-36 gap-4 justify-center">
+          <nav className="w-full flex flex-col items-center z-40 mt-36 gap-5 justify-center">
             {sections.map((section, id) => (
-              <Button variant={"link"} key={id} asChild>
-                <Link
-                  key={id}
-                  href={section.idRoute}
-                  className=" dark:text-primary-color"
-                  onClick={toggleMenu}
-                >
-                  {section.name}
-                </Link>
-              </Button>
-            ))}
-            <Button asChild variant={"outline"}>
               <Link
-                href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
-                className=""
-                target="_blank"
-                rel="noopener noreferrer"
+                key={id}
+                href={section.idRoute}
                 onClick={toggleMenu}
+                className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-secondary-color-3 dark:hover:text-secondary-color-3 transition-colors"
               >
-                View Resume
-                <HiDocumentText size={25} />
+                {section.name}
               </Link>
-            </Button>
+            ))}
+            <Link
+              href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3 hover:text-white rounded-sm transition-all"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={toggleMenu}
+            >
+              View Resume
+              <HiOutlineDocumentText size={16} />
+            </Link>
             <ThemeSwitcher />
           </nav>
         </motion.div>

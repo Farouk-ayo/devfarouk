@@ -7,7 +7,7 @@ const Copyright = () => {
         Designed by
         <Link
           href={"https://github.com/Farouk-ayo/devfarouk"}
-          className=" text-secondary-color-3   font-medium font-idgrotesk"
+          className=" text-secondary-color-3 font-medium"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -26,7 +26,7 @@ const Copyright = () => {
         )
       </p>
       <div></div>
-      <p className=" ">&copy; 2024 All rights reserved.</p>
+      <p className=" ">&copy; {new Date().getFullYear()} All rights reserved.</p>
     </div>
   );
 };
