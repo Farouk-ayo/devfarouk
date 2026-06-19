@@ -20,19 +20,20 @@ const Navbar = () => {
       className="fixed top-0 h-20 lg:h-24 flex flex-row items-center w-full shadow-sm justify-between px-2 sm:px-16 z-20 backdrop-blur-lg"
       data-aos="fade-down"
     >
-      <Link
-        href="/"
-        className="flex justify-start sm:justify-center items-center uppercase tracking-wider"
-      >
-        <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-gray-900 dark:text-white font-display">
-          Dev
-        </h1>
-        <p className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3">
-          Far
-          <ThemeSwitcher />
+      <div className="flex justify-start sm:justify-center items-center uppercase tracking-wider">
+        <Link href="/" className="flex items-center">
+          <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-gray-900 dark:text-white font-display">
+            Dev
+          </h1>
+          <span className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3">
+            Far
+          </span>
+        </Link>
+        <ThemeSwitcher />
+        <Link href="/" className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3">
           uk
-        </p>
-      </Link>
+        </Link>
+      </div>
       <div className="hidden md:flex items-center gap-2">
         <nav className="w-full flex flex-row items-center">
           <ul className="w-full flex flex-row justify-start items-center gap-6">

@@ -9,11 +9,11 @@ export default function Projects() {
       <div className=" flex items-center gap-2 sm:gap-8">
         <Link
           href={"/"}
-          className=" p-2 bg-[#FBEDDD] rounded-full text-black flex w-min"
+          className="p-2 border border-gray-200 dark:border-gray-700 hover:border-secondary-color-3 hover:text-secondary-color-3 text-gray-600 dark:text-gray-400 rounded-sm transition-all flex items-center"
         >
-          <IoMdArrowRoundBack size={25} />
+          <IoMdArrowRoundBack size={20} />
         </Link>
-        <h1 className=" font-medium text-4xl sm:text-3xl">Projects</h1>
+        <h1 className="font-bold text-2xl sm:text-3xl font-display">Projects</h1>
       </div>
       {projects.map(
         (project, id) =>
