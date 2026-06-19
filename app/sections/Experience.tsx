@@ -80,25 +80,29 @@ const Experience = () => {
       id="experience"
       data-aos="fade-up"
     >
-      <header className="flex flex-row gap-4 justify-start items-center ">
-        <span className="font-medium text-lg sm:text-2xl font-idgrotesk">
-          02. Where I've worked
+      <header className="flex flex-row gap-4 justify-start items-center overflow-visible">
+        <span className="text-2xl sm:text-3xl font-bold font-display">
+          Where I&apos;ve worked
         </span>
-        <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
+
+        <span className="hidden lg:block text-[5.5rem] font-black text-secondary-color-3 opacity-[0.12] dark:opacity-[0.25] leading-none pointer-events-none select-none">02</span>
+
+        {/* mobile line */}
+        <div className="w-[5%] lg:hidden border-b border-gray-200 dark:border-gray-700"></div>
       </header>
-      <div className="flex flex-col gap-5 lg:flex-row w-full py-10 lg:gap-10 items-center lg:items-start">
+      <div className="flex flex-col gap-5 lg:flex-row w-full py-10 lg:gap-10 items-start">
         <div
           id="companies-scrollbar"
           ref={containerRef}
-          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[40%]  "
-          // style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
+          className="flex lg:gap-0 overflow-x-auto lg:overflow-visible scrollbar-hide lg:inline-block w-full lg:w-[38%] border-b lg:border-b-0 lg:border-l border-gray-200 dark:border-gray-700 lg:pb-0"
         >
           {companies.map((company, id) => (
             <div
               key={id}
-              className={`lg:w-full min-w-max flex-shrink-0 cursor-pointer hover:text-primary-color hover:bg-[#FBEDDD] transition-all px-5 py-2  ${
-                tab === id &&
-                " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-primary-color font-medium"
+              className={`lg:w-full min-w-max flex-shrink-0 cursor-pointer transition-all px-5 py-3 text-sm font-medium border-b-2 lg:border-b-0 lg:border-l-2 -mb-px lg:mb-0 lg:-ml-px ${
+                tab === id
+                  ? "border-secondary-color-3 text-secondary-color-3 bg-[#FBEDDD] dark:bg-secondary-color-3/10 font-semibold relative z-10"
+                  : "border-transparent text-gray-600 dark:text-gray-300 hover:border-secondary-color-3/50 hover:text-secondary-color-3 hover:bg-[#FBEDDD]/50 dark:hover:bg-secondary-color-3/5"
               }`}
               onClick={() => handleTabClick(id)}
             >
@@ -106,7 +110,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        <div className="w-[100%] lg:w-[60%] overflow-x-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="w-full lg:w-[62%] overflow-x-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           <AnimatePresence mode="wait" initial={false} custom={direction}>
             <motion.div
               key={tab}
@@ -115,31 +119,32 @@ const Experience = () => {
               exit="exit"
               variants={variants}
               custom={direction}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.4 }}
             >
-              <h3 className=" text-base lg:text-lg font-medium font-grotesk">
-                {companiesInfo[tab].title} @
+              <h3 className="text-base lg:text-lg font-semibold font-display text-gray-900 dark:text-white">
+                {companiesInfo[tab].title}{" "}
+                <span className="font-normal text-gray-400 dark:text-gray-500">@</span>{" "}
                 <span className="text-secondary-color-3">
                   {companiesInfo[tab].company}
                 </span>
               </h3>
-              <p className="text-base text-gray-500 mt-2 font-idgrotesk">
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1.5">
                 {companiesInfo[tab].location}
               </p>
-              <h3 className="mt-2 text-gray-500 font-idgrotesk">
+              <p className="mt-0.5 text-sm text-gray-400 dark:text-gray-500 font-mono tracking-wide">
                 {companiesInfo[tab].duration}
-              </h3>
-              {companiesInfo[tab].roles.map((role) => (
-                <div key={role} className="flex justify-start mt-2">
-                  <div>
+              </p>
+              <div className="mt-4 flex flex-col gap-2">
+                {companiesInfo[tab].roles.map((role) => (
+                  <div key={role} className="flex justify-start items-start gap-1">
                     <RiArrowDropRightFill
-                      size={40}
-                      className="text-secondary-color-3"
+                      size={24}
+                      className="text-secondary-color-3 shrink-0 mt-0.5"
                     />
+                    <p className="text-sm lg:text-base text-gray-700 dark:text-gray-200 leading-relaxed">{role}</p>
                   </div>
-                  <p className="text-base">{role}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>

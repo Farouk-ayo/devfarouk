@@ -1,4 +1,4 @@
-import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import Link from "next/link";
 import { SiLoom } from "react-icons/si";
 
@@ -60,28 +60,28 @@ const Card = ({
         )}
       </div>
       <div
-        className={`relative z-10 p-4 lg:p-0 w-full sm:w-[90%] lg:w-[40%] lg:bg-transparent lg:rounded-none rounded-b-lg bg-[#FBEDDD] shadow lg:shadow-none lg:bg-none ${
+        className={`relative z-10 p-4 lg:p-0 w-full sm:w-[90%] lg:w-[40%] lg:bg-transparent dark:lg:bg-transparent lg:rounded-none rounded-b-lg bg-white dark:bg-gray-900 shadow lg:shadow-none ${
           isEven ? "lg:order-2 lg:text-right" : "lg:order-1 lg:text-left"
         }`}
       >
-        <h6 className="text-sm text-secondary-color-3  font-grotesk">{type}</h6>
-        <h1 className="text-2xl  font-medium dark:lg:text-white dark:text-primary-color">
+        <h6 className="text-xs font-bold text-secondary-color-3 font-mono tracking-widest uppercase mb-1">{type}</h6>
+        <h1 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">
           {name}
         </h1>
         <div
-          className={`px-0 py-0 lg:px-5 lg:py-7 lg:bg-[#FBEDDD] lg:shadow dark:text-primary-color text-sm lg:text-base mr-0 ml-0 ${
+          className={`px-0 py-0 lg:px-5 lg:py-6 lg:bg-white dark:lg:bg-gray-900 lg:shadow text-gray-700 dark:text-gray-200 text-sm lg:text-base mr-0 ml-0 ${
             isEven ? "lg:-ml-16" : "lg:-mr-16"
-          } mt-2 rounded-md relative`}
+          } mt-2 rounded-none relative lg:border-t-2 lg:border-secondary-color-3`}
         >
           {description}
         </div>
-        <div className="px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3 text-xs  font-medium flex-wrap font-idgrotesk">
+        <div className="px-0 lg:text-left mt-3 lg:px-2 flex gap-x-3 gap-y-1 flex-wrap font-mono">
           {stacks.map((stack, index) => (
-            <span key={index}>{stack}</span>
+            <span key={index} className="text-xs font-bold text-gray-500 dark:text-gray-400 before:content-['·'] before:mr-1.5 before:text-secondary-color-3">{stack}</span>
           ))}
         </div>
         <div
-          className={`flex gap-1 items-center justify-start mt-3 ${
+          className={`flex gap-2 items-center justify-start mt-4 ${
             isEven ? "lg:justify-end" : "lg:justify-start"
           }`}
         >
@@ -90,13 +90,10 @@ const Card = ({
               href={loomLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
-              title="Watch Loom Walkthrough"
+              className="flex items-center justify-center p-2 border border-gray-200 dark:border-gray-700 hover:border-secondary-color-3 hover:text-secondary-color-3 dark:hover:border-secondary-color-3 transition-all text-gray-500 dark:text-gray-400"
+              title="Watch Loom Demo"
             >
-              <SiLoom
-                size={16}
-                className="text-primary-color dark:lg:text-secondary-color-3"
-              />
+              <SiLoom size={15} />
             </Link>
           )}
 
@@ -105,12 +102,10 @@ const Card = ({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+              className="flex items-center justify-center p-2 border border-gray-200 dark:border-gray-700 hover:border-secondary-color-3 hover:text-secondary-color-3 dark:hover:border-secondary-color-3 transition-all text-gray-500 dark:text-gray-400"
+              title="View Live"
             >
-              <FaArrowUpRightFromSquare
-                size={16}
-                className="text-primary-color dark:lg:text-secondary-color-3"
-              />
+              <FiExternalLink size={15} />
             </Link>
           )}
           {githubLink && (
@@ -118,12 +113,10 @@ const Card = ({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+              className="flex items-center justify-center p-2 border border-gray-200 dark:border-gray-700 hover:border-secondary-color-3 hover:text-secondary-color-3 dark:hover:border-secondary-color-3 transition-all text-gray-500 dark:text-gray-400"
+              title="View on GitHub"
             >
-              <FaGithub
-                size={16}
-                className="text-primary-color dark:lg:text-secondary-color-3"
-              />
+              <FiGithub size={15} />
             </Link>
           )}
         </div>

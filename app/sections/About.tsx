@@ -7,12 +7,16 @@ const About = () => {
       id="about"
       data-aos="fade-up"
     >
-      <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-medium">
-        <div className="w-[5%%] lg:hidden lg:w-36 border-b-[1px] border-b-border-color"></div>
-        <span className=" text-lg sm:text-2xl font-idgrotesk">
-          01. About Me
-        </span>
-        <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
+      <div className="flex flex-row gap-4 justify-center lg:justify-end items-center overflow-visible">
+        {/* mobile left line */}
+        <div className="w-[5%] lg:hidden border-b border-gray-200 dark:border-gray-700"></div>
+
+        <span className="text-2xl sm:text-3xl font-bold font-display">About Me</span>
+
+        <span className="hidden lg:block text-[5.5rem] font-black text-secondary-color-3 opacity-[0.12] dark:opacity-[0.25] leading-none pointer-events-none select-none">01</span>
+
+        {/* mobile right line */}
+        <div className="w-[5%] lg:hidden border-b border-gray-200 dark:border-gray-700"></div>
       </div>
       <div className="flex flex-col  lg:flex-row w-full py-10  gap-10">
         <div className="w-full lg:w-[50%] flex flex-col gap-4 order-2 lg:order-1">
