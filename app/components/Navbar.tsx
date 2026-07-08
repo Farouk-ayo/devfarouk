@@ -30,7 +30,10 @@ const Navbar = () => {
           </span>
         </Link>
         <ThemeSwitcher />
-        <Link href="/" className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3">
+        <Link
+          href="/"
+          className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3"
+        >
           uk
         </Link>
       </div>
@@ -51,12 +54,12 @@ const Navbar = () => {
             ))}
             <li className="hidden lg:inline-block">
               <Link
-                href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1cilqRv9ULAHl-HlbgzyWFhZCQDId3LVQw6Kwy6ETB4s/edit?usp=sharing"
                 className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3 hover:text-white rounded-sm transition-all"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Resume
+                View CV
                 <HiOutlineDocumentText size={16} />
               </Link>
             </li>
@@ -99,13 +102,13 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="https://docs.google.com/document/d/1EktAf1QQtH6vMP7XUi9i0LLCasbY9IPy7YLwGasTA7k/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1cilqRv9ULAHl-HlbgzyWFhZCQDId3LVQw6Kwy6ETB4s/edit?usp=sharing"
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3 hover:text-white rounded-sm transition-all"
               target="_blank"
               rel="noopener noreferrer"
               onClick={toggleMenu}
             >
-              View Resume
+              View CV
               <HiOutlineDocumentText size={16} />
             </Link>
             <ThemeSwitcher />
