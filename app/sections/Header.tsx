@@ -9,7 +9,9 @@ const Header = () => {
         data-aos="fade-right"
       >
         <div className="flex flex-col gap-3">
-          <span className="text-sm text-gray-500 dark:text-gray-400">Hi, I&apos;m</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">
+            Hi, I&apos;m
+          </span>
           <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] font-display leading-[1.0] tracking-tight">
             <span className="text-gray-900 dark:text-white">Farouk</span>{" "}
             <span className="text-secondary-color-3">Mustapha.</span>
@@ -19,10 +21,12 @@ const Header = () => {
         <div className="mt-1 flex flex-col gap-3 max-w-2xl">
           <p className="leading-relaxed text-sm sm:text-base text-gray-600 dark:text-gray-300">
             I build scalable web platforms and{" "}
-            <span className="font-medium text-gray-900 dark:text-white">real-time 3D experiences</span>{" "}
+            <span className="font-medium text-gray-900 dark:text-white">
+              real-time 3D experiences
+            </span>{" "}
             that run directly in the browser. My work combines modern frontend
-            development, full-stack systems, and computational thinking to create
-            performant, reliable products.
+            development, full-stack systems, and computational thinking to
+            create performant, reliable products.
           </p>
           <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400">
             Let&apos;s build something remarkable together.
@@ -56,12 +60,17 @@ const Header = () => {
             alt="profile image"
             src={"/pprofile.webp"}
             quality={100}
-            className="grayscale-[30%] contrast-[1.15] saturate-[1.1] transition-all"
-            style={{
-              borderRadius: "50%",
-              height: "100%",
-              width: "100%",
-            }}
+            className="grayscale-[30%] contrast-[1.15] saturate-[1.1] transition-opacity duration-300 dark:opacity-0"
+            style={{ borderRadius: "50%" }}
+            objectFit="cover"
+            layout="fill"
+          />
+          <Image
+            alt="profile avatar"
+            src={"/profile-avatar.webp"}
+            quality={100}
+            className="absolute inset-0 opacity-0 transition-opacity duration-300 dark:opacity-100"
+            style={{ borderRadius: "50%" }}
             objectFit="cover"
             layout="fill"
           />
