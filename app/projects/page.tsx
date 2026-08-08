@@ -9,7 +9,7 @@ export default function Projects() {
       <div className=" flex items-center gap-2 sm:gap-8">
         <Link
           href={"/"}
-          className="p-2 border border-gray-200 dark:border-gray-700 hover:border-secondary-color-3 hover:text-secondary-color-3 text-gray-600 dark:text-gray-400 rounded-sm transition-all flex items-center"
+          className="p-2 border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3/10 rounded-sm transition-colors flex items-center"
         >
           <IoMdArrowRoundBack size={20} />
         </Link>

@@ -55,6 +55,18 @@ export const technologies = [
     iconLink: "https://cdn.simpleicons.org/typescript",
   },
   {
+    name: "C++",
+    iconLink: "https://cdn.simpleicons.org/cplusplus",
+  },
+  {
+    name: "C",
+    iconLink: "https://cdn.simpleicons.org/c",
+  },
+  {
+    name: "Rust",
+    iconLink: "https://cdn.simpleicons.org/rust",
+  },
+  {
     name: "TailwindCss",
     iconLink: "https://cdn.simpleicons.org/tailwindcss",
   },
@@ -124,9 +136,12 @@ export const companiesInfo = [
     location: "Remote",
     duration: "August 2025 – Present",
     roles: [
-      "Engineered a full-stack marketplace system enabling users to browse, favorite, and purchase 3D fashion assets, implementing seamless product CRUD operations and subscription-based payment architecture.",
-      "Built an advanced studio for users, implementing auto-fitting, rigging, and animation systems that optimized 3D clothing adaptation to avatars using Three.js.",
-      "Collaborated with designers and 3D artists to translate creative concepts into interactive real-time previews using Three.js and React Three Fiber, optimizing render performance for complex models.",
+      "Built a production browser-based 3D garment platform using React Three Fiber and Drei, including a materials editor, paint/texture editor, and real-time garment-on-avatar deformation with editable, persistent asset state.",
+      "Solved mesh correspondence between garment and avatar geometry using hybrid skinning (surface-to-surface transfer + weight painting), reducing manual rigging time by 60%.",
+      "Designed a two-mode GLB/GLTF compression pipeline — meshoptimizer for interactive file-size compression, gltf-transform for polygon-reduction LOD — benchmarked at 50–110x faster decode than Draco for skinned, animated garment assets.",
+      "Architected the UV atlas rendering and texture layout system, fixing paint-layer Y-flip and blend-mode bugs affecting garment texture accuracy.",
+      "Diagnosed and fixed a GLB-parse race condition causing layer-state loss on refresh, by resequencing rehydration against async model load.",
+      "Migrated studio state architecture from React Context to Zustand, cutting unnecessary re-renders and improving real-time interaction performance in a scene with live material/lighting edits.",
     ],
   },
   {

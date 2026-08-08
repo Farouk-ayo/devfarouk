@@ -47,7 +47,7 @@ const About = () => {
         <div className="w-full lg:w-[50%] order-1 lg:order-2">
           <article className="leading-relaxed text-base md:text-lg">
             I'm Farouk Mustapha, also known as{" "}
-            <span className="text-[#E88D67]">devFarouk</span> <br />
+            <span className="text-secondary-color-3">devFarouk</span> <br />
             <br />
             A Software Developer based in Lagos, Nigeria, with over 3 years of
             experience building web and mobile apps. I work mostly with
