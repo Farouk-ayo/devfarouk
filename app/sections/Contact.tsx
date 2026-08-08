@@ -1,6 +1,6 @@
 import { socialLinks } from "@/datas/data";
-import Image from "next/image";
 import Link from "next/link";
+import MessageIcon from "../components/MessageIcon";
 
 const Contact = () => {
   return (
@@ -35,15 +35,10 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           href={"mailto:mustaphafarouk41@gmail.com"}
-          className="inline-flex items-center gap-2 px-5 py-2.5 mt-6 border border-secondary-color-3 bg-secondary-color-3 text-white hover:bg-primary-color hover:border-primary-color text-sm font-medium rounded-sm transition-all"
+          className="inline-flex items-center gap-2 px-5 py-2.5 mt-6 border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3/10 text-sm font-medium rounded-sm transition-colors"
         >
           Send A Message
-          <Image
-            alt="message"
-            src={"/svgs/message-programming.svg"}
-            width={16}
-            height={16}
-          />
+          <MessageIcon size={16} />
         </Link>
       </div>
       <ul className="flex flex-row justify-center gap-4 mt-10 items-center">

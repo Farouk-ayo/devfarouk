@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="flex justify-start sm:justify-center items-center uppercase tracking-wider">
         <Link href="/" className="flex items-center">
-          <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-gray-900 dark:text-white font-display">
+          <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3 font-display">
             Dev
           </h1>
           <span className="text-xl sm:text-2xl lg:text-2xl font-bold font-display text-secondary-color-3">
@@ -55,7 +55,7 @@ const Navbar = () => {
             <li className="hidden lg:inline-block">
               <Link
                 href="https://docs.google.com/document/d/1cilqRv9ULAHl-HlbgzyWFhZCQDId3LVQw6Kwy6ETB4s/edit?usp=sharing"
-                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3 hover:text-white rounded-sm transition-all"
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-secondary-color-3 text-secondary-color-3 hover:bg-secondary-color-3/10 rounded-sm transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
