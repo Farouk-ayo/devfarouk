@@ -93,8 +93,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://devfarouk.vercel.app/devfarouk.png",
-        alt: " Farouk Mustapha | Software Engineer Portfolio",
+        url: "https://devfarouk.vercel.app/og-image.jpg",
+        alt: "Farouk Mustapha | Software Engineer Portfolio",
         width: 1200,
         height: 630,
       },
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
     title: "Farouk Mustapha | Frontend Engineer Portfolio",
     description:
       "Frontend Engineer specializing in building WebApps with React, Next.js, and TypeScript. Discover my works and projects.",
-    images: "https://devfarouk.vercel.app/devfarouk.png",
+    images: "https://devfarouk.vercel.app/og-image.jpg",
   },
 };
 

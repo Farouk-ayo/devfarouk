@@ -1,104 +1,70 @@
-# **Farouk Mustapha | Frontend Engineer Portfolio**
+# Farouk Mustapha — Portfolio
 
-![Portfolio Preview](https://devfarouk.vercel.app/devfarouk.png)
+Personal portfolio site, built with Next.js and TypeScript. Features a live topographic background rendered with Three.js / React Three Fiber that reacts to theme and pointer movement, alongside project, experience, and contact sections.
 
-A **modern, responsive, and SEO-friendly portfolio** built with **Next.js 14, TypeScript, and Tailwind CSS**. It showcases my projects, technical skills, and experience as a **Frontend Engineer** specializing in React and Next.js.
+**Live:** [devfarouk.vercel.app](https://devfarouk.vercel.app)
 
----
+![Preview](public/og-image.jpg)
 
-## 🚀 **Tech Stack**
+## Tech Stack
 
-**Frontend Framework:** [Next.js 14](https://nextjs.org/)
-**Language:** [TypeScript](https://www.typescriptlang.org/)
-**UI & Styling:** [Tailwind CSS](https://tailwindcss.com/) · [Shadcn/ui](https://ui.shadcn.com/) · [Framer Motion](https://www.framer.com/motion/) · [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/)
-**Icons:** [Lucide React](https://lucide.dev/) · [Radix UI](https://www.radix-ui.com/) · [React Icons](https://react-icons.github.io/react-icons/)
-**Theme Management:** [Next Themes](https://github.com/pacocoursey/next-themes) (Dark/Light mode)
-**Analytics:** [Google Analytics](https://marketingplatform.google.com/about/analytics/) · [Vercel Analytics](https://vercel.com/analytics)
+- **Framework:** Next.js 14 (App Router), TypeScript
+- **Styling:** Tailwind CSS, shadcn/ui, Radix UI
+- **3D / Animation:** Three.js, React Three Fiber, @react-three/drei, @react-three/postprocessing, Framer Motion, AOS
+- **Theming:** next-themes (dark/light)
+- **Analytics:** Vercel Analytics, Google Analytics
 
----
+## Features
 
-## ✨ **Features**
+- Animated 3D topographic background that shifts with theme and cursor position
+- Dark and light mode
+- Project showcase with live demo and GitHub links
+- Experience timeline and content driven from a single data file
+- Open Graph and Twitter card metadata for link previews
 
-✅ **Fully Responsive** – Mobile-first and optimized for all screen sizes
-✅ **Dark & Light Mode Support** – Seamless theme switching
-✅ **SEO Optimized** – Metadata, Open Graph, and Twitter Card integration
-✅ **Interactive UI** – Smooth animations & hover effects with Framer Motion and AOS
-✅ **Project Showcases** – With live demo & GitHub repository links
-✅ **Splash Screen Manager** – Elegant loading animations
-✅ **Performance Optimized** – Next.js image optimization & lazy loading
+## Getting Started
 
----
-
-## 📂 **Project Structure**
-
-```
-devfarouk/
-├── app
-│   ├── components
-│   │   ├── Navbar.tsx
-│   │   ├── Sidebar.tsx
-│   │   ├── SplashScreenManager.tsx
-│   │   └── Providers.tsx
-│   ├── sections
-│   │   └── Copyright.tsx
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── public
-│   └── devfarouk.png
-├── package.json
-└── tailwind.config.js
-```
-
----
-
-## 🛠 **Getting Started**
-
-### **1. Clone the Repository**
+Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/Farouk-ayo/devfarouk.git
 cd devfarouk
-```
-
-### **2. Install Dependencies**
-
-```bash
 npm install
 ```
 
-### **3. Run the Development Server**
+Run the dev server:
 
 ```bash
 npm run dev
 ```
 
-Then open **[http://localhost:3000](http://localhost:3000)** in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
-### **4. Build for Production**
+Build for production:
 
 ```bash
 npm run build
 npm start
 ```
 
----
+## Project Structure
 
-## 🔗 **Live Demo**
+```
+devfarouk/
+├── app/
+│   ├── components/    shared UI — navbar, sidebar, theme switch, 3D background
+│   ├── sections/      page sections — header, about, experience, projects, contact
+│   ├── projects/      full projects listing page
+│   └── layout.tsx     root layout and metadata
+├── components/ui/     shadcn/ui primitives
+├── datas/
+│   └── data.ts        content — technologies, experience, projects, social links
+└── public/            images and icons
+```
 
-👉 **[devfarouk.vercel.app](https://devfarouk.vercel.app)**
+## Contact
 
----
-
-## 📬 **Contact Me**
-
-- **Portfolio**: [devfarouk.vercel.app](https://devfarouk.vercel.app)
-- **LinkedIn**: [linkedin.com/in/Faroukayo](https://linkedin.com/in/Faroukayo)
-- **Twitter**: [twitter.com/faroukayo24](https://twitter.com/faroukayo24)
-- **Email**: [mustaphafarouk41@gmail.com](mailto:mustaphafarouk41@gmail.com)
-
----
-
-If you like this project, **please give it a star ⭐ on [GitHub](https://github.com/Farouk-ayo/devfarouk)**.
-
----
+- **Portfolio:** [devfarouk.vercel.app](https://devfarouk.vercel.app)
+- **LinkedIn:** [linkedin.com/in/Faroukayo](https://linkedin.com/in/Faroukayo)
+- **GitHub:** [github.com/Farouk-ayo](https://github.com/Farouk-ayo)
+- **Email:** [mustaphafarouk41@gmail.com](mailto:mustaphafarouk41@gmail.com)
