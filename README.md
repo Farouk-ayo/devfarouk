@@ -1,3 +1,5 @@
+
+
 # Farouk Mustapha — Portfolio
 
 Personal portfolio site, built with Next.js and TypeScript. Features a live topographic background rendered with Three.js / React Three Fiber that reacts to theme and pointer movement, alongside project, experience, and contact sections.
@@ -18,7 +20,7 @@ Personal portfolio site, built with Next.js and TypeScript. Features a live topo
 
 - Animated 3D topographic background that shifts with theme and cursor position
 - Dark and light mode
-- Project showcase with live demo and GitHub links
+- Project showcase with live demo, GitHub, and optional Loom demo links
 - Experience timeline and content driven from a single data file
 - Open Graph and Twitter card metadata for link previews
 
